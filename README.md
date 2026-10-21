@@ -41,7 +41,7 @@ Daftar pengguna
 
 | Halaman                                        | Isi                                                                         |
 | ---------------------------------------------- | --------------------------------------------------------------------------- |
-| [`page/index.html`](page/index.html)           | Beranda, informasi perpustakaan, layanan, fasilitas, statistik, dan grafik. |
+| [`index.html`](index.html)                     | Beranda, informasi perpustakaan, layanan, fasilitas, statistik, dan grafik. |
 | [`page/anggota.html`](page/anggota.html)       | Daftar anggota publik yang hanya menampilkan informasi terbatas.            |
 | [`page/registrasi.html`](page/registrasi.html) | Formulir pendaftaran anggota baru.                                          |
 | [`page/login.html`](page/login.html)           | Login petugas simulasi dan informasi akun demo.                             |
@@ -51,14 +51,15 @@ Daftar pengguna
 
 ```text
 ETS/
-├── page/       Halaman HTML
+├── index.html  Halaman utama (GitHub Pages)
+├── page/       Halaman HTML lainnya
 ├── css/        Stylesheet
 ├── js/         JavaScript aplikasi
 ├── img/        Aset gambar dan logo
 └── README.md   Dokumentasi website
 ```
 
-Web perpustakaan ini bersifat statis, sehingga informasi yang tersedia di navbar seperti beranda, fasilitas, informasi perpustakaan, dll akan tetap berada di page yang sama. Page yang berbeda hanya diperuntukkan untuk pendaftaran anggota, login petugas, serta dashboard admin, sehingga web perpustakaan ini hanya berisi 4 pages utama.
+Website ini memiliki satu halaman utama di root dan empat halaman tambahan di direktori `page/`. Bagian Beranda, Tentang, dan Layanan berada pada halaman utama; halaman lainnya digunakan untuk daftar publik, pendaftaran, login petugas, dan dashboard.
 
 Alur Pengguna:
 
